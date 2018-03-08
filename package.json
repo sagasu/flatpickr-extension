@@ -2,10 +2,26 @@
   "jspm": {
     "name": "app",
     "dependencies": {
-      "flatpickr": "npm:flatpickr@^4.3.2"
+      "flatpickr": "npm:flatpickr@2.6.1"
     },
     "devDependencies": {
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.25"
+    },
+    "overrides": {
+      "npm:flatpickr@2.6.1": {
+        "registry": "jspm",
+        "dependencies": {
+          "css": "*"
+        },
+        "meta": {
+          "dist/flatpickr.js": {
+            "deps": [
+              "./flatpickr.css!"
+            ],
+            "format": "global"
+          }
+        }
+      }
     }
   }
 }

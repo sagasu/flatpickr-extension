@@ -15,11 +15,18 @@ SystemJS.config({
 SystemJS.config({
   packageConfigPaths: [
     "npm:@*/*.json",
-    "npm:*.json"
+    "npm:*.json",
+    "github:*/*.json"
   ],
   map: {
-    "flatpickr": "npm:flatpickr@4.3.2",
+    "flatpickr": "npm:flatpickr@2.6.1",
     "plugin-babel": "npm:systemjs-plugin-babel@0.0.25"
   },
-  packages: {}
+  packages: {
+    "npm:flatpickr@2.6.1": {
+      "map": {
+        "css": "github:systemjs/plugin-css@0.1.37"
+      }
+    }
+  }
 });
