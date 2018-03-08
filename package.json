@@ -1,4 +1,10 @@
 {
+  "name": "flatpickr-extension",
+  "version": "1.0.2",
+  "description": "Extension to flatpickr module",
+  "main": "dist/flatpickr-extension.js",
+  "author": "Mateusz Kopij <sagasu>",
+  "license": "MIT",
   "scripts": {
     "babel": "babel --plugins transform-es2015-modules-commonjs src/flatpickr-extension.js -o dist/flatpickr-extension.js"
   },
