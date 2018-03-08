@@ -3,13 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
         value: true
 });
-exports.FlatpickrExtension = undefined;
 
 require("flatpickr");
 
 class FlatpickrExtension {
 
-        hook() {
+        static hook() {
                 Flatpickr.setDate = function (e) {
                         e.preventDefault();
                         e.stopPropagation();
@@ -85,5 +84,5 @@ class FlatpickrExtension {
                         if (self.config.mode === "single" && !self.config.enableTime) self.close();
                 };
         }
-}exports.FlatpickrExtension = FlatpickrExtension;
+}exports.default = FlatpickrExtension;
 ;
