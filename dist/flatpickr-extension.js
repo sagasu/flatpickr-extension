@@ -82,7 +82,7 @@ class FlatpickrExtension {
                                 return self.hourElement.select();
                         }, 451);
 
-                        if (self.config.mode === "single" && !self.config.enableTime) self.close();
+                        if (self.config.mode === "single") self.close();
                 };
         }
 }exports.FlatpickrExtension = FlatpickrExtension;
