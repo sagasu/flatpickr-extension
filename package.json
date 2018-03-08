@@ -1,6 +1,6 @@
 {
   "name": "flatpickr-extension",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Extension to flatpickr module",
   "main": "dist/flatpickr-extension.js",
   "author": "Mateusz Kopij <sagasu>",
