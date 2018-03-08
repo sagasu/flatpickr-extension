@@ -1,0 +1,11 @@
+{
+  "name": "flatpickr-extension",
+  "version": "1.0.0",
+  "description": "Extension to flatpickr module",
+  "main": "flatpickr-extension.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateusz Kopij <sagasu>",
+  "license": "MIT"
+}
