@@ -1,8 +1,8 @@
 import "flatpickr";
 
-export class FlatpickrExtension {
+export default class FlatpickrExtension {
 
-    hook () {
+    static hook () {
         Flatpickr.setDate = function(e){
             e.preventDefault();
             e.stopPropagation();
