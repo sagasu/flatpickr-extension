@@ -1,9 +1,12 @@
+declare var FlatpickrExtension: FlatpickrExtension.FlatpickrExtension;
 
-export interface FlatpickrExtension {
-    hook(): void;
+
+declare namespace FlatpickrExtension {
+    export interface FlatpickrExtension {
+        hook(): void;
+    }
 }
 
-declare module 'flatpickr-extension/*' {
-    var FlatpickrExtension: any;
+declare module 'flatpickr-extension' {
     export = FlatpickrExtension;
 }
