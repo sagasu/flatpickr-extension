@@ -476,7 +476,7 @@ SystemJS.config({
     },
     "npm:flatpickr@2.6.1": {
       "map": {
-        "css": "github:systemjs/plugin-css@0.1.37"
+        "css": "github:systemjs/plugin-css@0.1.36"
       }
     },
     "npm:for-own@0.1.5": {
