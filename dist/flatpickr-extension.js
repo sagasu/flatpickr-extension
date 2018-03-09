@@ -9,7 +9,7 @@ require("flatpickr");
 
 class FlatpickrExtension {
 
-        static hook() {
+        hook() {
                 Flatpickr.setDate = function (e) {
                         e.preventDefault();
                         e.stopPropagation();
